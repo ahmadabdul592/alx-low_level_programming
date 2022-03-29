@@ -1,26 +1,24 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * *_strpbrk  - searches a string for any of a set of bytes
  * @s: string to search
  * @accept: string containing the bytes to look for
  * Return: pointer   to the byte in s that mathes one of the bytes in accept
- * or NULL if no such byte is found
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
+	unsigned int i;
 
-	for (i = 0;  *s != '\0'; i++)
+	while (*s != '\0')
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		for (i = 0; accept[i] != '\0'; ++i)
 		{
-			if (*s == acceept[j])
+			if (*s == accept[i])
 			{
 				return (s);
 			}
 		}
-		s++;
+		++s;
 	}
-	return (NULL);
+	return (0);
 }
