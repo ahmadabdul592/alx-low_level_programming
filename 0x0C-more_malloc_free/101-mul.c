@@ -25,7 +25,7 @@ int is_digit(char *s)
  */
 unsigned int _strlen(char *str)
 {
-	int i = 0;
+	unsigned int i = 0;
 
 	while (str[i] != '\0')
 	{
