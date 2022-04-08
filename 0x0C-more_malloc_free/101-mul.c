@@ -23,9 +23,9 @@ int is_digit(char *s)
  * @str: string to evaluate
  * Return: the length of the string
  */
-unsigned int _strlen(char *str)
+int _strlen(char *str)
 {
-	unsigned int i = 0;
+	int i = 0;
 
 	while (str[i] != '\0')
 	{
